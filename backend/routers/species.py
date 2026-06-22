@@ -8,8 +8,8 @@ from fastapi.responses import JSONResponse
 import pandas as pd
 import json
 
-from dashboard.cache import AGG, ECO_H3, get_species
-from dashboard.filters import apply_taxa, apply_ecoregions
+from backend.dashboard.cache import AGG, ECO_H3, get_species
+from backend.dashboard.filters import apply_taxa, apply_ecoregions
 
 router = APIRouter()
 

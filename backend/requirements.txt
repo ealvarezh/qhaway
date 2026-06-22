@@ -1,4 +1,5 @@
 fastapi>=0.111.0
+python-multipart>=0.0.8
 uvicorn[standard]>=0.29.0
 duckdb>=1.0.0
 pandas>=2.1.0

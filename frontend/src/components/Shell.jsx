@@ -11,6 +11,7 @@ const NAV = [
   { key: 'cobertura',  label: 'Cobertura',     icon: IconGrid },
   { key: 'temporal',   label: 'Temporal',      icon: IconChart },
   { key: 'species',    label: 'Especies',      icon: IconCards },
+  { key: 'search',     label: 'Búsqueda Bichos', icon: IconSearch },
 ]
 
 export default function Shell({ activeView, viewLabel, onNav, children }) {
@@ -244,4 +245,13 @@ function IconCards({ size = 16 }) {
     <rect x="1.5" y="1.5" width="6" height="8" rx="1"/><rect x="8.5" y="6.5" width="6" height="8" rx="1"/>
     <rect x="1.5" y="11.5" width="6" height="3" rx="1"/><rect x="8.5" y="1.5" width="6" height="4" rx="1"/>
   </svg>
+}
+
+function IconSearch({ size = 16 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <circle cx="11" cy="11" r="6" />
+      <path d="M21 21l-4.3-4.3" />
+    </svg>
+  )
 }

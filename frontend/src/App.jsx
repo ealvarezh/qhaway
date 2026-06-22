@@ -3,6 +3,7 @@ import Shell           from './components/Shell'
 import MapView         from './components/MapView'
 import EcoregionsView  from './components/EcoregionsView'
 import SpeciesBrowser  from './components/SpeciesBrowser'
+import SearchBichos     from './components/SearchBichos'
 import { Temporal, TaxonTree, Cobertura } from './components/Charts'
 
 const VIEWS = {
@@ -12,6 +13,7 @@ const VIEWS = {
   cobertura: { label: 'Sesgo taxonómico',       component: Cobertura },
   temporal:  { label: 'Tendencias temporales',   component: Temporal },
   species:   { label: 'Explorador de especies',  component: SpeciesBrowser },
+  search:    { label: 'Búsqueda Bichos',         component: SearchBichos },
 }
 
 export default function App() {

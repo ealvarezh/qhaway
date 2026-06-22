@@ -16,8 +16,8 @@ from fastapi import APIRouter, Query
 from fastapi.responses import JSONResponse
 import pandas as pd
 
-from dashboard.cache import AGG, ECO_H3
-from dashboard.filters import apply_taxa, apply_ecoregions
+from backend.dashboard.cache import AGG, ECO_H3
+from backend.dashboard.filters import apply_taxa, apply_ecoregions
 
 router = APIRouter()
 
